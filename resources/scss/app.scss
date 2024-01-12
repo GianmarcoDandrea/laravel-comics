@@ -164,8 +164,7 @@ header {
             align-items: flex-start;
             flex-wrap: wrap;
 
-            .col {
-                // width: calc(100% / 6);
+            .col-2 {
                 padding: 1rem;
 
                 .comic-card {
@@ -178,8 +177,8 @@ header {
 
                         .cover {
                             width: 100%;
-                            aspect-ratio: 0.9;
-                            object-fit: cover;
+                            aspect-ratio: 0.8;
+                            object-fit: cover; 
                             object-position: top;
                         }
                     }

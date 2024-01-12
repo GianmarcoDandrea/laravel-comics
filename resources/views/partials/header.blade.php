@@ -14,7 +14,9 @@
 
     <div class="container d-flex justify-content-between py-3">
         <div class="logo">
-            <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            <a href="/">
+                <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+            </a>
         </div>
 
         <div class="header-left d-flex">
