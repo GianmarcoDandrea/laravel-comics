@@ -26,7 +26,7 @@
     <div class="footer-bottom">
         <div class="container">
 
-            <div class="left-sct">
+            <div class="left-section">
                 <a href="" class="sign-up-btn">
                     SIGN UP NOW!
                 </a>
@@ -41,7 +41,7 @@
                     @foreach ($socialIcons as $socialIcon)
                     <li>
                         <a href="">
-                            <img src="getImagePath(`${icon}`)" alt="">
+                            <img src="{{Vite::asset( "resources/img/$socialIcon" )}}" alt="">
                         </a>
                     </li>
                         
