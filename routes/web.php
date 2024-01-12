@@ -22,44 +22,74 @@ Route::get('/', function () {
     return view('home', compact('comics', 'navItems', 'footerNavItems','socialIcons', 'listIcons'));
 })->name('home');
 
-Route::get('/character', function () {
-    return view('character');
+Route::get('/character', function () { 
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('character', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('character');
 
 Route::get('/comics', function () {
-    return view('comics');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('comics', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('comics');
 
 Route::get('/movies', function () {
-    return view('movies');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('movies' ,compact('navItems', 'footerNavItems','socialIcons'));
 })->name('movies');
 
 Route::get('/tv', function () {
-    return view('tv');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('tv', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('tv');
 
 Route::get('/games', function () {
-    return view('games');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('games', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('games');
 
 Route::get('/collectibles', function () {
-    return view('collectibles');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('collectibles', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('collectibles');
 
 Route::get('/videos', function () {
-    return view('videos');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('videos', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('videos');
 
 Route::get('/fans', function () {
-    return view('fans');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('fans', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('fans');
 
 Route::get('/news', function () {
-    return view('news');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('news', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('news');
 
 Route::get('/shop', function () {
-    return view('shop');
+    $navItems = config('db.navItems');
+    $footerNavItems = config('db.footerNavItems');
+    $socialIcons = config('db.socialIcons');
+    return view('shop', compact('navItems', 'footerNavItems','socialIcons'));
 })->name('shop');
 
 
