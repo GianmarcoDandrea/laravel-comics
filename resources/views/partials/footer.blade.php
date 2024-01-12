@@ -5,7 +5,7 @@
                 <nav class="d-flex link-section">
                     @foreach ($footerNavItems as $footerNavItem)
                     <div class="link-card">
-                        <h4 class="list-title">{{$footerNavItem['title']}}</h4>
+                        <h4 class="list-title fw-bold">{{$footerNavItem['title']}}</h4>
                         <ul>
                             @foreach ($footerNavItem['subItems'] as $subItem)
                             <li>
@@ -33,7 +33,7 @@
             </div>
 
             <div class="right-sct">
-                <h3 class="follow-title">
+                <h3 class="follow-title fw-bold">
                     FOLLOW US
                 </h3>
 
