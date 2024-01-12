@@ -2,51 +2,53 @@
 
 return [
 
-        "navItems" => [[
+    "navItems" => [
+
+        [
             "name" => "CHARACTER",
-            "path"=>"character"
+            "path" => "character"
         ],
         [
             "name" => "COMICS",
-            "path"=>"comics"
+            "path" => "comics"
         ],
         [
             "name" => "MOVIES",
-            "path"=>"movies"
-        ]
-        ,
+            "path" => "movies"
+        ],
         [
             "name" => "TV",
-            "path"=>"tv"
+            "path" => "tv"
         ],
         [
             "name" => "GAMES",
-            "path"=>"games"
+            "path" => "games"
         ],
         [
             "name" => "COLLECTIBLES",
-            "path"=>"collectibles"
+            "path" => "collectibles"
         ],
         [
             "name" => "VIDEOS",
-            "path"=>"videos"
+            "path" => "videos"
         ],
         [
             "name" => "FANS",
-            "path"=>"fans"
+            "path" => "fans"
         ],
         [
             "name" => "NEWS",
-            "path"=>"news"
+            "path" => "news"
         ],
         [
             "name" => "SHOP",
-            "path"=>"shop"
+            "path" => "shop"
         ],
 
     ],
 
     "comics" => [
+
         [
             "thumb" => "https://www.coverbrowser.com/image/action-comics/1-1.jpg",
             "price" => "$19.99",
@@ -119,6 +121,65 @@ return [
             "series" => "Catwoman",
             "type" => "graphic novel"
         ]
+
+    ],
+
+    "footerNavItems" => [
+        [
+            "title" => "DC COMICS",
+            "subItems" => [
+                "Character",
+                "Comics",
+                "Movies",
+                "TV",
+                "Games",
+                "Videos",
+                "News"
+            ]
+        ],
+        [
+            "title" => "SHOP",
+            "subItems" => [
+                "Shop Dc",
+                "Shop DC Collectible"
+            ]
+        ],
+        [
+            "title" => "DC",
+            "subItems" => [
+                "Term Of Use",
+                "Privacy Policy (New)",
+                "Ad Choices",
+                "Advertising",
+                "Jobs",
+                "Subscribtions",
+                "Talent Workshop",
+                "CPSC Certificates",
+                "Ratings",
+                "Shop Help",
+                "Contact Us"
+            ]
+        ],
+        [
+            "title" => "SITES",
+            "subItems" => [
+                "DC",
+                "MAD Magazine", 
+                "DC Kids", 
+                "DC Universe", 
+                "DC Power Visa"
+            ]
+        ]
+
+
+    ],
+
+    "socialIcons" => [
+        "footer-facebook.png",
+        "footer-twitter.png",
+        "footer-youtube.png",
+        "footer-pinterest.png",
+        "footer-periscope.png"
     ]
 
 ];
