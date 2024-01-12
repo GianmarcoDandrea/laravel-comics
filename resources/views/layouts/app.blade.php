@@ -8,12 +8,20 @@
 
     {{-- Importare la parte di js e sass tramite vite --}}
     @vite('resources/js/app.js')
+
+    <link rel="stylesheet" href="{{ asset("fontawesome-free-6.5.1-web/css/all.min.css")}}">
 </head>
 <body>
+
+    {{-- HEADER --}}
+    @include('partials.header')
 
     <main>
         @yield('content')
     </main>
+
+    {{-- FOOTER --}}
+    @include('partials.footer')
     
 </body>
 </html>

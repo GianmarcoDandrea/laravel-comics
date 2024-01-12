@@ -4,44 +4,44 @@ return [
 
         "navItems" => [[
             "name" => "CHARACTER",
-            "path"=>""
+            "path"=>"character"
         ],
         [
             "name" => "COMICS",
-            "path"=>""
+            "path"=>"comics"
         ],
         [
             "name" => "MOVIES",
-            "path"=>""
+            "path"=>"movies"
         ]
         ,
         [
             "name" => "TV",
-            "path"=>""
+            "path"=>"tv"
         ],
         [
             "name" => "GAMES",
-            "path"=>""
+            "path"=>"games"
         ],
         [
             "name" => "COLLECTIBLES",
-            "path"=>""
+            "path"=>"collectibles"
         ],
         [
             "name" => "VIDEOS",
-            "path"=>""
+            "path"=>"videos"
         ],
         [
             "name" => "FANS",
-            "path"=>""
+            "path"=>"fans"
         ],
         [
             "name" => "NEWS",
-            "path"=>""
+            "path"=>"news"
         ],
         [
             "name" => "SHOP",
-            "path"=>""
+            "path"=>"shop"
         ],
 
     ],

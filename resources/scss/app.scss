@@ -1,1 +1,103 @@
 @import "~bootstrap/scss/bootstrap";
+
+// ROOT
+:root{
+    --container-big-width: 75%;
+    --main-color: #0282f9;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+// UTILITIES
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+// HEADER
+header {
+
+    .top-header {
+        font-size: 0.7rem;
+        font-weight: bold;
+        color: white;
+        background-color: var(--main-color);
+
+        .text-container {
+            margin: auto;
+            width: var(--container-big-width);
+            justify-content: end;
+        }
+    }
+
+
+    .container {
+        width: var(--container-big-width);
+
+        .logo {
+            width: 7%;
+        }
+
+
+        .nav-bar{
+            justify-content: center;
+            align-items: stretch;
+
+            .list-items {
+                margin: 0;
+    
+                li{
+                    position: relative;
+                    height: 100%;
+
+                    a {
+                        text-decoration: none;
+                        color: #000000;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                    }
+
+                    .arrow-down {
+                        color: var(--main-color);
+                    }
+        
+                    &::after {
+                        content: "";
+                        width: 100%;
+                        background-color: var(--main-color);
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                    }
+    
+                    &:hover {
+                        a {
+                            color: var(--main-color);
+                        }
+
+                        &::after {  
+                            height: 5px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .search-bar {
+            border-bottom: 3px solid var(--main-color);
+            input {
+                border: none;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+        }
+        
+    }
+}
