@@ -1,5 +1,5 @@
 <footer>
-    <div class="top-footer">
+    <div class="footer-top">
         <div class="container d-flex justify-content-between">
             <div class="left-section">
                 <nav class="d-flex link-section">
@@ -23,7 +23,32 @@
         </div>
     </div>
 
-    <div class="bottom-footer">
-        
+    <div class="footer-bottom">
+        <div class="container">
+
+            <div class="left-sct">
+                <a href="" class="sign-up-btn">
+                    SIGN UP NOW!
+                </a>
+            </div>
+
+            <div class="right-sct">
+                <h3 class="follow-title">
+                    FOLLOW US
+                </h3>
+
+                <ul>
+                    @foreach ($socialIcons as $socialIcon)
+                    <li>
+                        <a href="">
+                            <img src="getImagePath(`${icon}`)" alt="">
+                        </a>
+                    </li>
+                        
+                    @endforeach
+                </ul>
+            </div>
+
+        </div>
     </div>
 </footer>

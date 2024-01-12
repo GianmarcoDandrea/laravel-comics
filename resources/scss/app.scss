@@ -1,17 +1,21 @@
 @import "~bootstrap/scss/bootstrap";
 
 // ROOT
-:root{
+:root {
     --container_big_width: 75%;
+
     --main_color: #0282f9;
     --main_bg_text_color: #ffffff;
-    --dark_section_text_color:#ffffff;
+    --dark_section_text_color: #ffffff;
     --secondary_text_color: #9f9f9f;
-    
+
+    --footer_bg_color: #303030;
+    --footer_title_color: #ffffff;
+    --footer_text_color: #959595;
 }
 
 body {
-    font-family: "Open Sans Condensed", sans-serif;;
+    font-family: "Open Sans Condensed", sans-serif;
 }
 
 img {
@@ -27,7 +31,6 @@ img {
 
 // HEADER
 header {
-
     .top-header {
         font-size: 0.7rem;
         font-weight: bold;
@@ -41,7 +44,6 @@ header {
         }
     }
 
-
     .container {
         width: var(--container_big_width);
 
@@ -49,15 +51,14 @@ header {
             width: 7%;
         }
 
-
-        .nav-bar{
+        .nav-bar {
             justify-content: center;
             align-items: stretch;
 
             .list-items {
                 margin: 0;
-    
-                li{
+
+                li {
                     position: relative;
                     height: 100%;
 
@@ -71,7 +72,7 @@ header {
                     .arrow-down {
                         color: var(--main_color);
                     }
-        
+
                     &::after {
                         content: "";
                         width: 100%;
@@ -80,18 +81,17 @@ header {
                         left: 0;
                         bottom: 0;
                     }
-    
+
                     &:hover {
                         a {
                             color: var(--main_color);
                         }
 
-                        &::after {  
+                        &::after {
                             height: 5px;
                         }
                     }
                 }
-
             }
         }
 
@@ -113,27 +113,24 @@ header {
                 }
             }
         }
-        
     }
 }
 
-
-
 // FOOTER
 footer {
-    .top-footer {
+    .footer-top {
         background-image: url(../img/footer-bg.jpg);
         background-size: cover;
         height: 25rem;
         .container {
             width: var(--container_big_width);
             height: 100%;
-    
+
             .left-section {
                 padding: 2rem 0;
                 width: 40%;
                 height: 100%;
-                
+
                 .link-section {
                     width: 100%;
                     height: 100%;
@@ -141,7 +138,7 @@ footer {
                     align-items: flex-start;
                     justify-content: flex-start;
                     flex-wrap: wrap;
-                    .link-card{
+                    .link-card {
                         .list-title {
                             text-transform: uppercase;
                             color: var(--dark_section_text_color);
@@ -157,12 +154,10 @@ footer {
                                 }
                             }
                         }
-
                     }
-
                 }
             }
-    
+
             .rigth-section {
                 width: 47%;
                 height: 100%;
@@ -170,7 +165,27 @@ footer {
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
-            };
+            }
+        }
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left-section {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+
+            .sign-up-btn {
+                text-decoration: none;
+                color: var(--footer_title_color);
+                padding: 1rem;
+                border: 2px solid var(--main_color);
+                font-weight: bold
+            }
         }
     }
 }
