@@ -2,9 +2,16 @@
 
 // ROOT
 :root{
-    --container-big-width: 75%;
-    --main-color: #0282f9;
+    --container_big_width: 75%;
+    --main_color: #0282f9;
+    --main_bg_text_color: #ffffff;
+    --dark_section_text_color:#ffffff;
+    --secondary_text_color: #9f9f9f;
+    
+}
 
+body {
+    font-family: "Open Sans Condensed", sans-serif;;
 }
 
 img {
@@ -25,18 +32,18 @@ header {
         font-size: 0.7rem;
         font-weight: bold;
         color: white;
-        background-color: var(--main-color);
+        background-color: var(--main_color);
 
         .text-container {
             margin: auto;
-            width: var(--container-big-width);
+            width: var(--container_big_width);
             justify-content: end;
         }
     }
 
 
     .container {
-        width: var(--container-big-width);
+        width: var(--container_big_width);
 
         .logo {
             width: 7%;
@@ -62,13 +69,13 @@ header {
                     }
 
                     .arrow-down {
-                        color: var(--main-color);
+                        color: var(--main_color);
                     }
         
                     &::after {
                         content: "";
                         width: 100%;
-                        background-color: var(--main-color);
+                        background-color: var(--main_color);
                         position: absolute;
                         left: 0;
                         bottom: 0;
@@ -76,7 +83,7 @@ header {
     
                     &:hover {
                         a {
-                            color: var(--main-color);
+                            color: var(--main_color);
                         }
 
                         &::after {  
@@ -89,12 +96,20 @@ header {
         }
 
         .search-bar {
-            border-bottom: 3px solid var(--main-color);
+            border-bottom: 3px solid var(--main_color);
             input {
                 border: none;
-
+                width: 80%;
                 &:focus-visible {
                     outline: none;
+                }
+            }
+
+            button {
+                &:active {
+                    color: #00000000;
+                    background-color: #00000000;
+                    border-color: #00000000;
                 }
             }
         }
@@ -105,3 +120,57 @@ header {
 
 
 // FOOTER
+footer {
+    .top-footer {
+        background-image: url(../img/footer-bg.jpg);
+        background-size: cover;
+        height: 25rem;
+        .container {
+            width: var(--container_big_width);
+            height: 100%;
+    
+            .left-section {
+                padding: 2rem 0;
+                width: 40%;
+                height: 100%;
+                
+                .link-section {
+                    width: 100%;
+                    height: 100%;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    flex-wrap: wrap;
+                    .link-card{
+                        .list-title {
+                            text-transform: uppercase;
+                            color: var(--dark_section_text_color);
+                        }
+                        ul {
+                            padding: 0;
+                            li {
+                                list-style-type: none;
+
+                                a {
+                                    text-decoration: none;
+                                    color: var(--secondary_text_color);
+                                }
+                            }
+                        }
+
+                    }
+
+                }
+            }
+    
+            .rigth-section {
+                width: 47%;
+                height: 100%;
+                background-image: url(../img/dc-logo-bg.png);
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            };
+        }
+    }
+}
