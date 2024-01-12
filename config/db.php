@@ -180,6 +180,29 @@ return [
         "footer-youtube.png",
         "footer-pinterest.png",
         "footer-periscope.png"
+    ],
+
+    "listIcons" => [
+        [
+            "name"=>"resources/img/buy-comics-digital-comics.png",
+            "text"=>"digital comics"
+        ],
+        [
+            "name"=>"resources/img/buy-comics-merchandise.png",
+            "text"=>"dc merchandise"
+        ],
+        [
+            "name"=>"resources/img/buy-comics-subscriptions.png",
+            "text"=>"subscrition"
+        ],
+        [
+            "name"=>"resources/img/buy-comics-shop-locator.png",
+            "text"=>"comic shop locator"
+        ],
+        [
+            "name"=>"resources/img/buy-dc-power-visa.svg",
+            "text"=>"dc power visa"
+        ],
     ]
 
 ];

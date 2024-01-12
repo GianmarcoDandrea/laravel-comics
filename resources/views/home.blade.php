@@ -32,4 +32,19 @@
             </button>
         </div>
     </section>
+
+
+    <section class="icon-list">
+        <div class="container d-flex">
+            @foreach ($listIcons as $listIcon)
+            <div class="icon-card d-flex flex-center">
+
+                <img src="{{Vite::asset( $listIcon['name'] )}}" alt="">
+                <a href="" class="icon-text">{{ $listIcon['text'] }}</a>
+
+            </div>
+                
+            @endforeach
+        </div>
+    </section>
 @endsection

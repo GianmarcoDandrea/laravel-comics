@@ -2,23 +2,22 @@
 
 // ROOT
 :root {
-
     --container_big_width: 75%;
-    --container_big_width: 70%;
+    --container_small_width: 70%;
     //FONT FAMILY
-    --title_font_family:"Open Sans Condensed", sans-serif;
-    --text_font_family:"Open Sans", sans-serif;
+    --title_font_family: "Open Sans Condensed", sans-serif;
+    --text_font_family: "Open Sans", sans-serif;
 
     // main
     --main_color: #0282f9;
     --main_bg_text_color: #ffffff;
     --secondary_text_color: #9f9f9f;
 
-    //colored sections 
-    --dark_section_bg_color:#1c1c1c;
+    //colored sections
+    --dark_section_bg_color: #1c1c1c;
     --dark_section_text_color: #ffffff;
     --light_section_bg_color: #f6f6f6;
-    --light_section_text_color:#003f5e;
+    --light_section_text_color: #003f5e;
 
     //footer
     --footer_bg_color: #303030;
@@ -141,13 +140,13 @@ header {
     background-color: var(--dark_section_bg_color);
 
     .container {
-        width: var(--container_big_width);
+        width: var(--container_small_width);
         position: relative;
         padding: 2rem 0;
         background-color: var(--dark_section_bg_color);
         flex-direction: column;
 
-        .current-title{
+        .current-title {
             color: var(--dark_section_text_color);
             background-color: var(--main_color);
             padding: 0.9rem 1rem;
@@ -176,7 +175,7 @@ header {
                     .comic-cover {
                         width: 100%;
                         aspect-ratio: 1;
-                
+
                         .cover {
                             width: 100%;
                             aspect-ratio: 0.9;
@@ -184,18 +183,15 @@ header {
                             object-position: top;
                         }
                     }
-                
+
                     .comic-title {
                         text-transform: uppercase;
                         color: var(--dark_section_text_color);
                         font-size: 0.9rem;
                         margin-top: 0.5rem;
                     }
-                
-                
                 }
             }
-
         }
 
         .load-btn {
@@ -206,8 +202,41 @@ header {
             font-size: 1rem;
             font-weight: bold;
         }
+    }
+}
 
+.icon-list {
+    background-color: var(--main_color);
+    padding: 2rem 1rem;
+    .container {
+        width: var(--container_small_width);
+        gap: 1rem;
+        justify-content: space-between;
+        align-items: center;
+    }
 
+    .icon-card {
+        height: 100%;
+        width: calc(100% / 5);
+        padding: 1rem 0;
+
+        &:last-child {
+            img {
+                width: 45%;
+            }
+        }
+
+        img {
+            height: 4.5rem;
+            margin-right: 0.3rem;
+        }
+    }
+
+    .icon-text {
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        color: var(--dark_section_text_color);
+        text-decoration: none;
     }
 }
 
@@ -265,43 +294,42 @@ footer {
     }
 
     .footer-bottom {
-
         background-color: var(--footer_bg_color);
         .container {
             padding: 1.5rem 0;
             display: flex;
             justify-content: space-between;
             align-items: center;
-    
+
             .left-section {
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
-    
+
                 .sign-up-btn {
                     text-decoration: none;
                     color: var(--footer_title_color);
                     padding: 1rem;
                     border: 2px solid var(--main_color);
-                    font-weight: bold
+                    font-weight: bold;
                 }
             }
 
-            .right-sct{
+            .right-sct {
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
-    
+
                 .follow-title {
                     color: var(--main_color);
                 }
-                
+
                 ul {
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
                     list-style-type: none;
-        
+
                     li {
                         margin-left: 2rem;
                     }
