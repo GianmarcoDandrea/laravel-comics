@@ -7,7 +7,7 @@
         <div class="container d-flex flex-column flex-center">
 
             <div class="current-title">
-                <h3 class="m-0 fw-bold fs-3">
+                <h3 class="m-0 fw-bold fs-2">
                     CURRENT SERIES
                 </h3>
             </div>

@@ -5,9 +5,8 @@
 
     <section style="color:rgb(255, 255, 255);background-color:#1c1c1c;
     text-align:center; padding: 5rem 0">
-        
-        FANS
-            
-    </section>
 
+        FANS
+
+    </section>
 @endsection
